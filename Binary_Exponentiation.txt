@@ -1,0 +1,12 @@
+ll Binary_Exponentiation(ll a, ll b){
+
+      ll res=1;
+
+      while(b){
+
+           if(b&1)res=(res*a)%Mod;
+           a=(a*a)%Mod;
+           b=b>>1;
+      }
+      return res;
+}
